@@ -35,7 +35,6 @@ Movie-Recommendation-System/
 │
 ├── dataset/
 │   ├── movies.csv
-│   └── ratings.csv
 │
 ├── app.py
 ├── requirements.txt

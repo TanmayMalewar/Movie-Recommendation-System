@@ -15,12 +15,12 @@ st.write("Find movies similar to your favorite movie.")
 
 
 # Load datasets
-movies = pd.read_csv(
-    r"C:\Users\tanma\OneDrive\Movie-Recommendation-System\dataset\movies.csv"
-)
+from pathlib import Path
 
-ratings = pd.read_csv(
-    r"C:\Users\tanma\OneDrive\Movie-Recommendation-System\dataset\ratings.csv"
+BASE_DIR = Path(__file__).resolve().parent
+
+movies = pd.read_csv(
+    BASE_DIR / "dataset" / "movies.csv"
 )
 
 
